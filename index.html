@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="slides">
+    <div>
+        <img src="assets/img/1.jpg" data-imagesrc="assets/img/1.jpg" class="lightbox_enabled">
+    </div>
+    <div>
+        <img src="assets/img/2.jpg" class="lightbox_enabled" data-target="image" data-imagesrc="assets/img/2.jpg">
+    </div>
+    <div>
+        <img src="assets/img/3.jpg" class="lightbox_enabled" data-imagesrc="assets/img/3.jpg">
+    </div>
+    <div>
+        <img src="assets/img/4.jpg" class="lightbox_enabled" data-imagesrc="assets/img/4.jpg">
+    </div>
+    <div>
+        <img src="assets/img/5.jpg" class="lightbox_enabled" data-imagesrc="assets/img/5.jpg">
+    </div>
+    <div>
+        <img src="assets/img/6.jpg" class="lightbox_enabled" data-imagesrc="assets/img/6.jpg">
+    </div>
+</div>
+    <div class="lightbox_container">
+        <button class="close_btn" id="close_btn">
+            <img src="assets/icons/close_btn.svg" alt="">
+        </button>
+      <div class="lightbox_image_wrapper">
+          <button class="lightbox_btn left" id="left">
+              <img src="assets/icons/next_btn.svg" alt="">
+          </button>
+          <div class="lightbox_image">
+              <div class="light_image-header">
+                  <span id="active_image-title">עובדי רש״ת</span>
+                  <img src="assets/icons/logo/logo.png" alt="">
+              </div>
+              <img src="" alt="" id="active_image">
+              <div class="lightbox_image-footer">
+                  <a href="#">למידע נוסף</a>
+              </div>
+          </div>
+<!--          <button class="lightbox_btn right" id="right">Right</button>-->
+      </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+
+
+<script>
+    $('.slides').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
+</script>
+
+
+<!--    <script>-->
+<!--        lightbox.option({-->
+<!--            'fadeDuration': 0,-->
+<!--            'wrapAround': true,-->
+<!--            'imageFadeDuration': 100-->
+<!--        })-->
+<!--    </script>-->
+
+
+<script src="carousel.js"></script>
+</body>
+</html>

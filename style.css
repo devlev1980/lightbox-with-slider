@@ -1,0 +1,105 @@
+.slides div {
+  width: 100%;
+  height: 231px;
+}
+.slides div img {
+  width: 169px;
+  height: auto;
+}
+
+.lightbox_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(1, 14, 42, 0.88);
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+}
+.lightbox_container.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.lightbox_container button.close_btn {
+  position: absolute;
+  left: 52px;
+  top: 52px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.lightbox_container .lightbox_image_wrapper {
+  display: grid;
+  place-items: center;
+  width: 488px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 24px;
+}
+.lightbox_container .lightbox_image_wrapper button.left {
+  background: transparent;
+  border: 0;
+  position: absolute;
+  left: -101px;
+  cursor: pointer;
+}
+.lightbox_container .lightbox_image_wrapper button.right {
+  position: absolute;
+  right: -101px;
+}
+.lightbox_container .lightbox_image_wrapper .lightbox_image {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+}
+.lightbox_container .lightbox_image_wrapper .lightbox_image img {
+  width: 100%;
+  height: 88%;
+  border-radius: 24px !important;
+  object-fit: cover;
+  margin-bottom: 0.8rem;
+}
+.lightbox_container .lightbox_image_wrapper .lightbox_image .light_image-header {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+}
+.lightbox_container .lightbox_image_wrapper .lightbox_image .light_image-header span {
+  min-width: 91px;
+  font-size: 18px;
+  color: white;
+  margin-right: 16px;
+  display: inline-block;
+}
+.lightbox_container .lightbox_image_wrapper .lightbox_image .light_image-header img {
+  width: 100%;
+  height: 100%;
+}
+.lightbox_container .lightbox_image_wrapper .lightbox_image .lightbox_image-footer {
+  height: 91px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lightbox_container .lightbox_image_wrapper .lightbox_image .lightbox_image-footer a {
+  min-width: 140px;
+  text-align: center;
+  background-color: #4a6af1;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 23px;
+  padding: 11px 25px;
+}
+
+/*# sourceMappingURL=style.css.map */
